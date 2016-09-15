@@ -1,0 +1,12 @@
+# IntelliJ IDEA #
+.idea/
+*.iml
+
+# Eclipse Files #
+.metadata
+.settings
+.project
+.classpath
+RemoteSystemsTempFiles
+
+target/
