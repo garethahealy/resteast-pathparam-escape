@@ -17,6 +17,7 @@
 package com.garethahealy.resteastpathparamescape.utils;
 
 import javax.ws.rs.Consumes;
+import javax.ws.rs.Encoded;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
@@ -31,5 +32,5 @@ public interface PathHandler {
 
     @GET
     @Path("/{path}/treeHash")
-    Response getEntityHash(@PathParam("path") String path);
+    Response getEntityHash(@Encoded @PathParam("path") String path);
 }
