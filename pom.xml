@@ -16,7 +16,8 @@
     </scm>
 
     <properties>
-        <resteasy.version>3.1.0-SNAPSHOT</resteasy.version>
+        <resteasy-bug.version>3.0.19.Final</resteasy-bug.version>
+        <resteasy.version>3.1.0.CR2</resteasy.version>
     </properties>
 
     <dependencyManagement>
