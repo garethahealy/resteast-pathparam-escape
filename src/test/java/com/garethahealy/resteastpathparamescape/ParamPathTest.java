@@ -6,6 +6,7 @@ import com.garethahealy.resteastpathparamescape.utils.PathHandler;
 import com.garethahealy.resteastpathparamescape.utils.RestFactory;
 
 import org.apache.http.NoHttpResponseException;
+import org.apache.http.conn.HttpHostConnectException;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -22,8 +23,8 @@ public class ParamPathTest {
             PathHandler handler = createClient();
             handler.getEntityHash("t;unit-testing/e;mzn7vykz");
         } catch (Exception ex) {
-            if (ex.getCause() instanceof NoHttpResponseException) {
-                //Worked, as attempted to call endpoint
+            if (ex.getCause() instanceof NoHttpResponseException || ex.getCause() instanceof HttpHostConnectException) {
+                //Worked, as attempted to call endpoint but couldn't connect/send
                 Assert.assertTrue(true);
             } else {
                 Assert.fail(ex.getCause().getMessage());
