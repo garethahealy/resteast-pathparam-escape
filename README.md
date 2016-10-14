@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/garethahealy/resteast-pathparam-escape.svg?branch=master)](https://travis-ci.org/garethahealy/resteast-pathparam-escape)
+[![License](https://img.shields.io/hexpm/l/plug.svg?maxAge=2592000)]()
+
 # resteast-pathparam-escape
 - mvn clean install
 
